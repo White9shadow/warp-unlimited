@@ -35,7 +35,7 @@ This guide provides instructions for installing and running the Warp Unlimited s
 5. **Run the Script**:
    
 ```
-   python warp_script.py
+   python warpunlim.py
   ```
 
 ### Ubuntu/Linux
@@ -62,7 +62,7 @@ This guide provides instructions for installing and running the Warp Unlimited s
 4. **Run the Script**
    
 ```
-   python3 warp_script.py
+   python3 warpunlim.py
   ```
 
 ### iPhone (iSH)
@@ -91,5 +91,5 @@ This guide provides instructions for installing and running the Warp Unlimited s
 5. **Run the Script**:
    
 ```
-   python3 warp_script.py
+   python3 warpunlim.py
 ```
