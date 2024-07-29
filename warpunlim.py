@@ -1,3 +1,9 @@
+# Aurthor : revWhiteSHadow @TG (White9Shadow @ Github)
+# A tool to get unlimited gb on warp(1.1.1.1).
+# Build Device : Ubuntu + Android 
+# Tools that test With : Termux ,Android Terminal , Net Hunter terminal , Ubuntu Terminal,Kali,vs code, windows, mac, Iphone
+# This is a licanced script under GPL V3 , If you are using any part of this script use proper credit 
+
 from datetime import datetime
 from json import dumps
 from random import choice, randint
@@ -25,22 +31,16 @@ print("Website : www.magiskflash.com")
 print("Telegram : @godTspeed")
 print("Telegram : @godspeedmode")
 print("")
-# Input the WARP client ID from the user
+print("For WARP client ID, go to 1.1.1.1 settings, advanced diagnostics, copy the IP and paste it below.")
 WARP_CLIENT_ID = input("Please enter your WARP client ID: ")
-
-# Defaults
 SUCCESS_COUNT, FAIL_COUNT = 0, 0
-
 def genString(stringLength):
     letters = ascii_letters + digits
     return ''.join(choice(letters) for _ in range(stringLength))
-
 def digitString(stringLength):
     digit = digits
     return ''.join(choice(digit) for _ in range(stringLength))
-
 url = f"https://api.cloudflareclient.com/v0a{digitString(3)}/reg"
-
 while True:
     try:
         install_id = genString(22)
@@ -67,15 +67,12 @@ while True:
         print(f"Error: {error_code}")
         FAIL_COUNT += 1
         continue
-
     if response.status_code == 200:
         SUCCESS_COUNT += 1
         print(f"PASSED: +1GB (total: {SUCCESS_COUNT}GB, failed: {FAIL_COUNT})")
     else:
         print(f"FAILED: {response.status_code}")
         FAIL_COUNT += 1
-
-    # Cooldown
     cooldown_time = 5
     print(f"Sleep: {cooldown_time} seconds.")
     sleep(cooldown_time)
