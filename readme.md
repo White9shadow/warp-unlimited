@@ -65,31 +65,29 @@ This guide provides instructions for installing and running the Warp Unlimited s
    python3 warpunlim.py
   ```
 
-### iPhone (iSH)
+### iPhone - iSH
 
 1. **Download and Install iSH**:
    - Download iSH from the [App Store](https://apps.apple.com/us/app/ish-shell/id1436902243).
 
 2. **Update and Install Dependencies**:
-   
    ```
    apk update
-   apk add git pythoClone the Repositoryll httpx
-  ```
+   apk add git python3 py3-pip
+   pip3 install httpx
+   ```
 
 3. **Clone the Repository**:
-   
-```
-   git clone https://github.comNavigate to the Script Directory
-```
+   ```
+   git clone https://github.com/White9shadow/warp-unlimited.git
+   ```
+
 4. **Navigate to the Script Directory**:
-   
-```
+   ```
    cd warp-unlimited
-  ```
+   ```
 
 5. **Run the Script**:
-   
-```
+   ```
    python3 warpunlim.py
-```
+   ```
